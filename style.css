@@ -1,0 +1,102 @@
+body{
+  background: #B0D0C3;
+}
+.title{
+  /*padding-bottom: 5px;*/
+  top: 10vh;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #D89077;
+  font-size: 2em;
+  
+}
+.container{
+  margin: 5px;
+  background: #EDD1C3;
+  width: 100vh;
+  height: 100%;
+  display: table-row;
+  text-align: center;
+  font-size: 1.1em;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #D89077;
+  
+}
+
+.item{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4vh;
+  
+  
+}
+
+.canvasCentral {
+  /*position: fixed;*/
+  position: absolute;
+  top: 13vh;
+ 
+  right: 10vh;      
+ 
+  border-radius: 10px;
+  background: #968ABA;
+  /*
+  width: 130vh; 
+  height: 80vh;
+  */
+  width: 60%;
+  height: 80%;
+}
+
+.botao{
+  background-color: #968ABA;
+  border: none;
+  
+    text-align: center;
+    
+    font-family: 'Roboto', sans-serif;
+   
+    border: 0px;
+    color: #EDD1C3;
+}
+
+button:hover {
+  color: rgb(138, 255, 127);
+  font-size: 1em;
+
+}
+
+
+@media (max-width: 1220){
+  .canvasCentral{
+    width: 50vh; 
+    height: 50vh;
+    top: 10vh;
+ 
+    right: 2vh;
+  }
+  .container{
+    width: 80vh;
+    height: 80%;
+  }
+  .canvass{
+    width: 50%;
+    height: 50%;
+  }
+}
+@media (max-width: 1100){
+  .canvasCentral{
+    width: 30vh; 
+    height: 20vh;
+    top: 4vh;
+ 
+    
+  }
+  .container{
+    width: 50%;
+    height: 60%;
+  }
+  
+}

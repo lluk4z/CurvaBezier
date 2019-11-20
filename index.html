@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title> Curvas Bezier</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+	<h1 class="title">CURVAS DE BÉZIER</h1>	
+		
+	<div class="container">
+
+		<div class="item"> Curvas: <select id="selectCampo" onchange="mudarCurva();"></select> </div>
+
+		<div class="item"> Criar Ponto: <button class="botao" type="button" onClick="inserirCurva();">Adicionar</button> </div>
+    <div class="item"> Excluir curva: <button class="botao" type="button" onClick="excluirCurva();">Excluir</button> </div>
+		
+    <div class="item">
+    Iterações:
+		<input id="interacoes" type="number" value="100" />
+    <button class="botao" type="button" onclick="modificarInteracoes();">OK</button>
+    </div>
+
+    
+
+    <div class="item">
+		<input type="checkbox" id="checkCurva" onchange="modificarVisualizacaoCurva();" checked />Curva
+    </div>
+
+    <div class="item">
+		<input type="checkbox" id="checkPontos" onchange="modificarVisualizacaoPontos();" checked />Pontos de controle
+    </div>
+
+    <div class="item">
+		<input type="checkbox" id="checkPoligonais" onchange="modificarVisualizacaoPoligonal(); " checked />Poligonal de controle 
+    </div>
+
+    
+
+	</div>
+	</body>
+
+  <div>
+	<canvas class="canvasCentral"  id="meuCanvas" >
+	</canvas>
+  </div>
+
+	<script type="text/javascript" src="canvas.js"></script>
+	<script type="text/javascript" src="casteljau.js"></script>
+	<script type="text/javascript" src="eventos.js"></script>
+	<script type="text/javascript" src="bezier.js"></script>
+	
+</html>

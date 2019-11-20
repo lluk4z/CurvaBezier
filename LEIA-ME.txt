@@ -1,0 +1,11 @@
+Grupo: Lucas Emanuel - lemmg; Anderson Carneiro - acs6
+
+=========================================================
+Para criar uma curva aperte em adicionar, em seguida voce pode criar um ponto de controle no canvas
+apertando o botão esquerdo mouse.
+
+Para excluir um ponto de controle basta apertar com o botão direito do mouse sobre o ponto que
+deseja apagar
+
+O botão excluir serve para excluir a curva selecionada no campo CURVAS
+
