@@ -3,6 +3,7 @@
 var curvasControle = [];
 
 var curvaSelecionada=0;
+var todasCurvas = 1;
 
 var apertando = false;
 var moveu = false;

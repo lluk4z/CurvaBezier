@@ -52,19 +52,33 @@ function modificarInteracoes(){
 }
 
 function modificarVisualizacaoCurva(){
-	curvasControle[curvaSelecionada].desenharCurva = checkCurva.checked;
+  let i
+  for(i=0; i<curvasControle[curvaSelecionada].pontos.length; i++){
+    curvasControle[i].desenharCurva = checkCurva.checked;
 	Redesenhar();
+  }
+	
 }
 
 function modificarVisualizacaoPoligonal(){
-	curvasControle[curvaSelecionada].desenharPoligonais = checkPoligonais.checked;
+  let i
+  for(i=0; i < curvasControle[curvaSelecionada].pontos.length; i++){
+    curvasControle[i].desenharPoligonais = checkPoligonais.checked;
 	Redesenhar();
+  }
+	
 }
 
 function modificarVisualizacaoPontos(){
-	curvasControle[curvaSelecionada].desenharPontos = checkPontos.checked;
-	Redesenhar();
+  let i
+  for(i=0; i<curvasControle[curvaSelecionada].pontos.length; i++){
+    curvasControle[i].desenharPontos = checkPontos.checked;
+	  Redesenhar();
+  }
+	
 }
+
+
 
 
  
